@@ -149,6 +149,32 @@ header span {
 	min-height: 390px;
 	display: inline-block;
 	margin-left: 15%;
+	max-height: 450px;
+	overflow: scroll;
+}
+
+.insta_pic  {
+	width: 150px;
+	height: 150px;
+	background-size: 150% !important;
+	display: inline-block;
+	float: left;
+	transition: .5s ease;
+	cursor: pointer;
+}
+
+.insta_pic:hover  {
+	background-size: 100% !important;
+}
+
+#instafeed img {
+	height: 100%;
+	max-width: 150px;
+}
+
+#instafeed a {
+	width: 150px;
+	height: 150px;
 }
 
 .left {
