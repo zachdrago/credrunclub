@@ -38,13 +38,35 @@ function filterFunction() {
 // INSTAFEED ======================================|
 var userFeed = new Instafeed({
   get: 'user',
-  userId: '2411261480',
-  clientId: '7e748962a2134ed1a5741121e428582b',
-  accessToken: '2411261480.7e74896.fa03eeb15f034f63a1fa466a9af678bf'
+  userId: '4011766578',
+  clientId: '0b08ac92d16b4248b68c90805daa37d6',
+  accessToken: '4011766578.1677ed0.a5b70da1e603486490c8bdbb2ca6e875',
+  resolution: 'standard_resolution',
+  template: '<div link="{{link}}" id="{{image}}" class="insta_pic" onclick="instaPop(this.id, this.link)" style="background: url({{image}}) center center;"></div>'
 });
 userFeed.run(); 
 
 
+function instaPop(id, link) {
+
+    var insta_large = $('.insta_large');
+    insta_large.attr('src', id);
+
+    var insta_link = $('.insta_link');
+    insta_link.attr('href', link);
+    
+
+    $('#instaPop').lightbox_me({
+        appearEffect: 'fadeIn',
+        centered: true,
+        showOverly: true,
+        overlayCSS: {background: '#2e3641', opacity: 0.9},
+        closeClick: true,
+        lightboxSpeed: 'fast',
+    });
+    //e.preventDefault();
+    //e.stopPropagation();
+}
 
 
 
