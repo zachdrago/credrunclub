@@ -116,11 +116,11 @@
 
 		<div class="dropdown">
 		<form id="miles">
-		<input onclick="dropdown()" placeholder="name" class="dropbtn"></input>
+		<input onclick="dropdown()" placeholder="name" class="dropbtn" id="name" name="name"></input>
 
 			<div id="myDropdown" class="dropdown-content">
 
-			<input type="text" placeholder="Search.." id="searchInput" onkeyup="filterFunction()"></input>
+			<!-- <input type="text" placeholder="Search.." id="searchInput" onkeyup="filterFunction()"></input> -->
 
 				<ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="team-feeds">
 				    <li>
@@ -158,7 +158,7 @@
 		</form>
 		</div>
 
-		<input type="text" name="milesRan" class="milesInput" placeholder="miles ran">
+		<input type="text" id="milesRan" name="milesRan" class="milesInput" placeholder="miles ran">
 
 		<div class="submitBtnWrapper">
 			<button type="submit" class="submitBtn">submit</button>
