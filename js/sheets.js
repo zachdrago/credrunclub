@@ -56,4 +56,7 @@ $("#miles").submit(function(event){
 
     // Prevent default posting of form
     event.preventDefault();
+
+    $('.dropbtn').val();
+    $('.milesInput').val();
 });
