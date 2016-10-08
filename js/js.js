@@ -42,7 +42,7 @@ var userFeed = new Instafeed({
   clientId: '0b08ac92d16b4248b68c90805daa37d6',
   accessToken: '4011766578.1677ed0.a5b70da1e603486490c8bdbb2ca6e875',
   resolution: 'standard_resolution',
-  template: '<div link="{{link}}" id="{{image}}" class="insta_pic" onclick="instaPop(this.id, this.link)" style="background: url({{image}}) center center;"></div>'
+  template: '<div id="{{image}}" class="insta_pic" onclick="instaPop(this.id, this.link)" style="background: url({{image}}) center center;"></div>'
 });
 userFeed.run(); 
 

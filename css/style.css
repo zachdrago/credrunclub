@@ -457,7 +457,7 @@ tr:nth-child(even) {
 /*================= HERO VIDEO ==========================*/
 
 #lightbox {
-	top: 40px;
+	top: 40% !important;
 }
 
 
