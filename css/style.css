@@ -210,8 +210,8 @@ tr:nth-child(even) {
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: rgba(34, 70, 136, 0.70);
-    color: white;
+    background-color: #dddddd;
+    color: rgba(34, 70, 136, 0.70);
     padding: 16px;
     font-size: 16px;
     border: none;
