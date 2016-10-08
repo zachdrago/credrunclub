@@ -35,6 +35,11 @@ function filterFunction() {
 }
 
 
+function formName(id) {
+    alert(id);
+}
+
+
 // INSTAFEED ======================================|
 var userFeed = new Instafeed({
   get: 'user',
