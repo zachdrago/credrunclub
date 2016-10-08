@@ -54,8 +54,6 @@ $("#miles").submit(function(event){
         $inputs.prop("disabled", false);
     });
 
-    // Prevent default posting of form
-    event.preventDefault();
 
     $('.dropbtn').val();
     $('.milesInput').val();
@@ -63,4 +61,7 @@ $("#miles").submit(function(event){
     dropbtn.value = '';
     var milesInput = document.getElementById('milesRan');
     milesInput.value = '';
+
+    // Prevent default posting of form
+    event.preventDefault();
 });
