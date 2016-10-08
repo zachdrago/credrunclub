@@ -2,7 +2,7 @@
 var request;
 
 // Bind to the submit event of our form
-$("#foo").submit(function(event){
+$("#miles").submit(function(event){
 
     // Abort any pending request
     if (request) {
