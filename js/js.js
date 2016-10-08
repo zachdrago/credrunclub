@@ -36,7 +36,7 @@ function filterFunction() {
 
 
 function formName(id) {
-    $('dropbtn').val(id);
+    $('dropbtn').value(id);
     alert(id);
 }
 
