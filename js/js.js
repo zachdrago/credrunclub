@@ -64,12 +64,11 @@ function instaPop(id, link) {
 
     $('#instaPop').lightbox_me({
         appearEffect: 'fadeIn',
-        centered: false,
+        centered: true,
         showOverly: true,
         overlayCSS: {background: '#2e3641', opacity: 0.9},
         closeClick: true,
         lightboxSpeed: 'fast',
-        modalCSS: {top: '440px'},
     });
     //e.preventDefault();
     //e.stopPropagation();
