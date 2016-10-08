@@ -59,4 +59,8 @@ $("#miles").submit(function(event){
 
     $('.dropbtn').val();
     $('.milesInput').val();
+    var dropbtn = document.getElementById('name');
+    dropbtn.value = '';
+    var milesInput = document.getElementById('milesRan');
+    milesInput.value = '';
 });
