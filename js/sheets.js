@@ -62,6 +62,7 @@ $("#miles").submit(function(event){
     dropbtn.value = '';
     var milesInput = document.getElementById('milesRan');
     milesInput.value = '';
+    $('.milesInput').attr('name', "name");
 
     // Prevent default posting of form
     event.preventDefault();
