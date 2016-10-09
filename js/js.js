@@ -50,8 +50,15 @@ function filterFunction() {
 }
 
 
+// function formName(id) {
+//     $('.dropbtn').val(id);
+//     // alert(id);
+// }
+
+
 function formName(id) {
     $('.dropbtn').val(id);
+    $('.milesInput').attr('name', id);
     // alert(id);
 }
 
