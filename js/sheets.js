@@ -112,12 +112,12 @@ $.ajax({
 
 
 function populatePage() {
-  totalMiles = "";
+  var totalMiles = "";
   theSheet.feed.entry.forEach(
     function(row) {
       totalMiles = row.gsx$total.$t;   
     }
-  )
+  );
   $('#totalMiles').html(totalMiles);
   return false;
 }
@@ -162,7 +162,7 @@ function populateTable() {
       tableRow += "</tr>";
       table += tableRow;
     }
-  )
+  );
   $('#individual-miles').html("<tbody id='runner-list'><tr><th>runner</th><th>miles</th></tr>" + table + "</tbody>");
   return false;
 }
