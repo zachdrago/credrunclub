@@ -8,6 +8,7 @@ function addMiles() {
         closeClick: true,
         lightboxSpeed: 'fast',
         modalCSS: {top: '15%'},
+        closeSelector: ".close",
     });
 }
 
