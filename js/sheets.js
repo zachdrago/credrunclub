@@ -75,8 +75,9 @@ function clearMileName() {
     $('.thanks').show();   
     
     setTimeout(function(){
-        getTotals();
-    }, 1000);
+        $('.submitBtn').show();
+        $('.thanks').hide();
+    }, 2000);
 }
 
 
