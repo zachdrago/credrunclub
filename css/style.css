@@ -334,6 +334,7 @@ tr:nth-child(even) {
 }
 
 .thanks {
+	display: none;
 	color: #46a443;
 	background-color: rgba(56, 154, 118, .2);
 	font-size: 14px;
@@ -346,6 +347,7 @@ tr:nth-child(even) {
 	letter-spacing: 2px;
 	font-weight: 600;
 	cursor: default;
+	pointer-events: none;
 }
 
 
