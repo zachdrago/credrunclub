@@ -74,3 +74,49 @@ function clearMileName() {
     $('.submitBtn').hide();
     $('.thanks').show();    
 }
+
+
+
+
+
+// GET TOTAL MILES RAN FROM SHEET ==================================
+
+window.onload = function() {
+  $('.total-submit').click();
+};
+
+//Prevent Default Form Behavior (don't want the form submit to re-load the page)
+$(document).ready(function() {
+  $('#totals').submit(function(evt) {
+    evt.preventDefault();
+  });
+});
+
+var googleSheetKey = "1jsaOqUEUFo6Y5wSVvn0JGY57nlpcp_KzCjK2nF9AwH0";
+var theSheet;//Save the preloaded JSON object here
+
+//pre-load the sheet on page load
+$.ajax({
+  url: 'https://spreadsheets.google.com/feeds/list/' + googleSheetKey + '/o4yaqwc/public/values?alt=json-in-script',
+  dataType: 'jsonp',
+  success: function(dataWeGotViaJsonp) {
+    theSheet = dataWeGotViaJsonp;
+  }
+});
+  
+  
+
+
+function populatePage() {
+  totalMiles = "";
+  theSheet.feed.entry.forEach(
+    function(row) {
+      totalMiles = row.gsx$total.$t;   
+    }
+  )
+  $('#results').html(totalMiles);
+  return false;
+}
+
+
+

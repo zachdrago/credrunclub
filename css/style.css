@@ -95,7 +95,7 @@ header span {
 	margin-bottom: 0;
 	margin-left: 30px;
 }
-.statistics__statistic-label, .statistics__statistic-value {
+.stats-label, .stats-value {
 	display: inline-block;
 	vertical-align: middle;
 	height: 60px;
@@ -104,13 +104,13 @@ header span {
 	text-transform: uppercase;
 }
 
-.statistics__statistic-label {
+.stats-label {
 	font-weight: 300;
 	font-size: 1.2em;
 	background-color: rgba(0, 0, 0, .3);
 	font-family: 'Roboto Mono', monospace;
 }
-.statistics__statistic-value {
+.stats-value {
 	font-weight: 400;
 	font-size: 2.5em;
 	letter-spacing: .7ex;
