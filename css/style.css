@@ -38,6 +38,9 @@ header span {
 #totals {
   display: none;
 }
+#runners-totals {
+  display: none;
+}
 
 .close {
 	display: inline-block;

@@ -109,8 +109,6 @@ $.ajax({
     theSheet = dataWeGotViaJsonp;
   }
 });
-  
-  
 
 
 function populatePage() {
@@ -123,6 +121,58 @@ function populatePage() {
   $('#totalMiles').html(totalMiles);
   return false;
 }
+
+
+
+// ==============
+
+window.onload = function() {
+  $('.runners-total-submit').click();
+};
+
+//Prevent Default Form Behavior (don't want the form submit to re-load the page)
+$(document).ready(function() {
+  $('#runners-totals').submit(function(evt) {
+    evt.preventDefault();
+  });
+});
+
+var googleSheetKey = "1jsaOqUEUFo6Y5wSVvn0JGY57nlpcp_KzCjK2nF9AwH0";
+var theSheet;//Save the preloaded JSON object here
+
+//pre-load the sheet on page load
+$.ajax({
+  url: 'https://spreadsheets.google.com/feeds/list/' + googleSheetKey + '/o4gp47q/public/values?alt=json-in-script',
+  dataType: 'jsonp',
+  success: function(dataWeGotViaJsonp) {
+    theSheet = dataWeGotViaJsonp;
+  }
+});
+  
+  
+
+
+function populateTable() {
+  table = "";
+  theSheet.feed.entry.forEach(
+    function(row) {
+      tableRow = "<tr>";
+      tableRow += "<td>" + row.gsx$name.$t + "</td>";
+      tableRow += "<td>" + row.gsx$total.$t + "</td>";
+      tableRow += "</tr>";
+      table += tableRow;
+    }
+  )
+  $('.left').html("<tbody id='runner-list'><tr><th>runner</th><th>miles</th></tr>" + table + "</tbody>");
+  return false;
+}
+
+
+
+
+
+
+
 
 
 
