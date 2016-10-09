@@ -82,16 +82,16 @@ header span {
 	font-size: 1rem;
 	display: inline-block;
 }
-.statistics__statistic {
+.statistics {
 	list-style-type: none;
 	display: inline-block;
 	white-space: nowrap;
 	margin-bottom: 1px
 }
-.statistics__statistic:first-child {
+.statistics:first-child {
 	margin-right: 30px;
 }
-.statistics__statistic:last-child {
+.statistics:last-child {
 	margin-bottom: 0;
 	margin-left: 30px;
 }
