@@ -43,6 +43,10 @@ header span {
 	background-size: cover;
 }
 
+.ciles {
+	text-align: right;
+}
+
 .progressBar {
 	background-color: #474747;
 	color: rgba(255, 255, 255, .9);
