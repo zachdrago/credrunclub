@@ -163,7 +163,7 @@ function populateTable() {
       table += tableRow;
     }
   )
-  $('.left').html("<tbody id='runner-list'><tr><th>runner</th><th>miles</th></tr>" + table + "</tbody>");
+  $('#individual-miles').html("<tbody id='runner-list'><tr><th>runner</th><th>miles</th></tr>" + table + "</tbody>");
   return false;
 }
 
