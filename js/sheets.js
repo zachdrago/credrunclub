@@ -72,7 +72,8 @@ $("#miles").submit(function(event){
 function clearMileName() {
     $('.milesInput').attr('name', "name");
     $('.submitBtn').hide();
-    $('.thanks').show();    
+    $('.thanks').show();   
+    getTotal(); 
 }
 
 
@@ -82,6 +83,10 @@ function clearMileName() {
 // GET TOTAL MILES RAN FROM SHEET ==================================
 
 window.onload = function() {
+  $('.total-submit').click();
+};
+
+function getTotal() {
   $('.total-submit').click();
 };
 
