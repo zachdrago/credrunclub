@@ -35,6 +35,10 @@ header span {
 	padding: 0 0 0 30px;
 }
 
+#totals {
+  display: none;
+}
+
 .close {
 	display: inline-block;
 	position: absolute;
