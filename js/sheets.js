@@ -24,6 +24,7 @@ $("#miles").submit(function(event){
 
     // Fire off the request to /form.php
     request = $.ajax({
+        // url: "https://script.google.com/macros/s/AKfycbwzJmm6HwkWvi0uXRxl9deJ8z6pJbIGeAWr6YQGgstbQ17hM49N/exec",
         url: "https://script.google.com/macros/s/AKfycbwzJmm6HwkWvi0uXRxl9deJ8z6pJbIGeAWr6YQGgstbQ17hM49N/exec",
         type: "post",
         data: serializedData
