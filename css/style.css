@@ -333,6 +333,21 @@ tr:nth-child(even) {
 	text-shadow: 0 0 24px #fff;
 }
 
+.thanks {
+	color: #46a443;
+	background-color: rgba(56, 154, 118, .2);
+	font-size: 14px;
+	padding: 20px 40px;
+	border-radius: 29.99999975px;
+	text-align: center;
+	vertical-align: middle;
+	border-color: #46a443;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 2px;
+	font-weight: 600;
+	cursor: default;
+}
+
 
 
 /* =========================== FOOTER ==========================*/

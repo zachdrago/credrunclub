@@ -71,4 +71,6 @@ $("#miles").submit(function(event){
 
 function clearMileName() {
     $('.milesInput').attr('name', "name");
+    $('.submitBtn').hide();
+    $('.thanks').show();    
 }
