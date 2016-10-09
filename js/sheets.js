@@ -114,7 +114,7 @@ function populatePage() {
       totalMiles = row.gsx$total.$t;   
     }
   )
-  $('#results').html(totalMiles);
+  $('#totalMiles').html(totalMiles);
   return false;
 }
 
