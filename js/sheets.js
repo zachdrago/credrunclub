@@ -73,7 +73,8 @@ function clearMileName() {
     $('.milesInput').attr('name', "name");
     $('.submitBtn').hide();
     $('.thanks').show();   
-    getTotal(); 
+    
+    setTimeout(getTotal(), 1000); 
 }
 
 
