@@ -74,7 +74,9 @@ function clearMileName() {
     $('.submitBtn').hide();
     $('.thanks').show();   
     
-    setTimeout(function(){getTotals();}, 1000);
+    setTimeout(function(){
+        getTotals();
+    }, 1000);
 }
 
 
@@ -92,6 +94,10 @@ function getTotals() {
   $('.total-submit').click();
   $('.runners-total-submit').click();
 };
+
+
+
+
 
 //Prevent Default Form Behavior (don't want the form submit to re-load the page)
 $(document).ready(function() {
@@ -148,8 +154,6 @@ $.ajax({
 });
   
   
-
-
 function populateTable() {
   table = "";
   theSheet2.feed.entry.forEach(
