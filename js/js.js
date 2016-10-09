@@ -1,3 +1,18 @@
+// ADD MILES LIGHTBOX
+function addMiles() {
+    $('#lightbox').lightbox_me({
+        appearEffect: 'fadeIn',
+        centered: false,
+        showOverly: true,
+        overlayCSS: {background: '#2e3641', opacity: 0.9},
+        closeClick: true,
+        lightboxSpeed: 'fast',
+        modalCSS: {top: '15%'},
+    });
+}
+
+
+
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function dropdown() {

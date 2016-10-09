@@ -11,7 +11,7 @@ var time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 var dateCreated = twoDigitDate + "/" + twoDigitMonth + "/" + fullDate.getFullYear() + "|" + time;
 
 
-// Destroy/Reset Entire DB
+// ADD MILES LIGHTBOX
 function addMiles() {
 	$('#lightbox').lightbox_me({
 		appearEffect: 'fadeIn',
@@ -22,15 +22,6 @@ function addMiles() {
         lightboxSpeed: 'fast',
         modalCSS: {top: '15%'},
     });
-	
-	// var doc = {
-	//   "_id": dateCreated,
-	//   "name": "Kyle",
-	//   "entries": [
-	//     "0",
-	//   ]
-	// };
-	// db.put(doc);
 }
 
 
