@@ -85,6 +85,7 @@ function clearMileName() {
 
 window.onload = function() {
   $('.total-submit').click();
+  $('.runners-total-submit').click();
 };
 
 function getTotal() {
@@ -126,10 +127,6 @@ function populatePage() {
 
 // ==============
 
-window.onload = function() {
-  $('.runners-total-submit').click();
-};
-
 //Prevent Default Form Behavior (don't want the form submit to re-load the page)
 $(document).ready(function() {
   $('#runners-totals').submit(function(evt) {
@@ -137,15 +134,15 @@ $(document).ready(function() {
   });
 });
 
-var googleSheetKey = "1jsaOqUEUFo6Y5wSVvn0JGY57nlpcp_KzCjK2nF9AwH0";
-var theSheet;//Save the preloaded JSON object here
+var SheetKey = "1jsaOqUEUFo6Y5wSVvn0JGY57nlpcp_KzCjK2nF9AwH0";
+var theSheet2;//Save the preloaded JSON object here
 
 //pre-load the sheet on page load
 $.ajax({
-  url: 'https://spreadsheets.google.com/feeds/list/' + googleSheetKey + '/o4gp47q/public/values?alt=json-in-script',
+  url: 'https://spreadsheets.google.com/feeds/list/' + SheetKey + '/o4gp47q/public/values?alt=json-in-script',
   dataType: 'jsonp',
   success: function(dataWeGotViaJsonp) {
-    theSheet = dataWeGotViaJsonp;
+    theSheet2 = dataWeGotViaJsonp;
   }
 });
   
@@ -154,7 +151,7 @@ $.ajax({
 
 function populateTable() {
   table = "";
-  theSheet.feed.entry.forEach(
+  theSheet2.feed.entry.forEach(
     function(row) {
       tableRow = "<tr>";
       tableRow += "<td>" + row.gsx$name.$t + "</td>";
